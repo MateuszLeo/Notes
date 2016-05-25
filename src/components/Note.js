@@ -20,8 +20,8 @@ export default class Note extends Component {
   }
 
   handleDeleteClick(id, target){
-    delteNote(id);
     target.remove()
+    delteNote(id);
   }
 
   render(){
