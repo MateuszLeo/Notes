@@ -9,7 +9,7 @@ export const addNote = ({ img, text, id }) => {
 
 export const delteNote = (id) => {
   const notes = getLocalStorage();
-  if( notes.length !== 1 ){
+  if ( notes.length !== 1 ){
     notes.splice(id, 1);
     localStorage.setItem('notes', JSON.stringify(notes));
   } else {

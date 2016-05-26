@@ -42,7 +42,7 @@ export default class Note extends Component {
     return(
       <li style={listStyle}>
         <p style={buttonStyle} onClick={ e => this.handleDeleteClick(id, e.target.parentNode)}>DELETE</p>
-        <a style={linkStyle} href={img}>IMG: {img}</a>
+        <img src={img} />
         <textarea for='note' onChange={ e => this.handleChange(e.target.value) }>{text}</textarea>
       </li>
     )
